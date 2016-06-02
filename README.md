@@ -51,10 +51,7 @@ let sql = SQL<UserInfo>().SELECT.COUNT(.username, .phonenum, .username).FROM(Use
 
 ```
 let sql = SQL2<UserInfo, PayInfo>()
-sql.SELECT([.password, .phonenum], [.money, .product])
-.FROM(UserInfo.self, PayInfo.self)
-.WHERE(.userid == .userid)
-.AND(.money == .null)
+sql.SELECT([.password, .phonenum], [.money, .product]).FROM(UserInfo.self, PayInfo.self).WHERE(.userid == .userid).AND(.money == .null)
 ```
 
 ### 关联查询
@@ -82,5 +79,4 @@ let sql = UPDATE(PayInfo).SET(.money == 9, .product == "3322").WHERE(.money + 8 
 ```
 
 ## License
-FFSQLite is available under the MIT license. See \[the LICENSE
-                                                   file](./LICENSE.txt) for more information.
+FFSQLite is available under the MIT license. See \[the LICENSE file](./LICENSE.txt) for more information.
