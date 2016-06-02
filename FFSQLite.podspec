@@ -17,15 +17,11 @@ Pod::Spec.new do |s|
 
   s.name         = "FFSQLite"
   s.version      = "1.0.0"
-  s.summary      = "A short description of FFSQLite."
+  s.summary      = "A simple sqlite library written in swift."
 
   s.description  = <<-DESC
-                   A longer description of FFSQLite in Markdown format.
+                   A simple sqlite library written in swift.
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
   s.homepage     = "https://github.com/bujiandi/FFSQLite"
@@ -39,7 +35,6 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,9 +48,6 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "apple" => "lzl@appfenfen.com" }
-  # Or just: s.author    = "apple"
-  # s.authors            = { "apple" => "278124813@qq.com" }
-  # s.social_media_url   = "http://twitter.com/apple"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
