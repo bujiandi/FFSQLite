@@ -1,10 +1,12 @@
 # FFSQLite
+
 ## 特点
 
 - 使用Swift语言
 - 方便使用，链式语法。
 
 ## 使用
+
 ### 建立表模型
 需继承DBTableType协议
 
@@ -39,12 +41,11 @@ var option: DataBaseColumnOptions {
 ``
 
 
-### 查询数据
-#### 单表查询
+### 单表查询
 ```
 let sql = SQL<UserInfo>().SELECT.COUNT(.username, .phonenum, .username).FROM(UserInfo).WHERE(.username == 2)
 ``
-#### 多表查询
+### 多表查询
 ```
 let sql = SQL2<UserInfo, PayInfo>()
 sql.SELECT([.password, .phonenum], [.money, .product])
@@ -53,7 +54,7 @@ sql.SELECT([.password, .phonenum], [.money, .product])
 .AND(.money == .null)
 ``
 
-#### 关联查询
+### 关联查询
 ```
 let sql = SELECT * FROM(UserInfo).LEFT.JOIN(PayInfo).ON(.userid == .userid).WHERE(.password != password)
 ``
